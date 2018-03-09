@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prestart": "npx tsc",
     "start": "node ./bin/www"
   },
   "author": "Matt Morgis",
@@ -11,6 +12,7 @@
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
+    "dotenv": "^5.0.1",
     "express": "~4.15.5",
     "express-hbs": "^1.0.4",
     "morgan": "~1.9.0",
