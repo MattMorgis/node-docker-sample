@@ -1,0 +1,48 @@
+{
+  "tslint.enable": true,
+
+  "prettier.bracketSpacing": false,
+  "prettier.typescriptEnable": ["typescript", "typescriptreact"],
+  "prettier.cssEnable": ["css", "less", "scss"],
+  "prettier.jsonEnable": ["json"],
+  "prettier.javascriptEnable": ["javascript", "javascriptreact"],
+  "prettier.singleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.tabWidth": 2,
+
+  "html.format.enable": false,
+  "typescript.format.enable": false,
+  "javascript.format.enable": false,
+
+  "editor.rulers": [80],
+  "editor.formatOnSave": true,
+
+  "beautify.ignore": ["!**/*.hbs"],
+  "beautify.language": {
+    "html": {
+      "type": ["htm", "html"],
+      "ext": ["hbs", "html"]
+    }
+  },
+  "beautify.config": {
+    "html": {
+      "indent_handlebars": true,
+      "indent_size": 2,
+      "indent_char": " ",
+      "wrap_line_length": 80,
+      "extra_liners": [],
+      "unformatted": []
+    }
+  },
+
+  "explorer.sortOrder": "type",
+
+  "search.exclude": {
+    "**/build": true
+  },
+
+  "files.exclude": {
+    "coverage": true,
+    "package-lock.json": true
+  }
+}
