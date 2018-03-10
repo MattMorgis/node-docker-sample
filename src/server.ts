@@ -28,7 +28,6 @@ class Server {
   private middleware(): void {
     // uncomment after placing your favicon in /public
     // this.express.use(favicon(path.join(__dirname, '../public', 'favicon.ico')));
-    this.express.use(logger('dev'));
     this.express.use(bodyParser.json());
     this.express.use(bodyParser.urlencoded({extended: false}));
     this.express.use(cookieParser());
