@@ -1,4 +1,4 @@
-# Motivation
+# Node/TypeScript Docker Sample
 
 Sandbox to mess around with Docker and a TypeScript codebase.
 
