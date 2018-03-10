@@ -13,7 +13,7 @@ class AppRouter {
     this.router.get(
       '/',
       (request: Request, response: Response, next: NextFunction) => {
-        response.render('index', {pid: process.pid});
+        response.render('index', {pid: process.pid, uptime: process.uptime});
       }
     );
   }
