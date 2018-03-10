@@ -18,7 +18,6 @@ COPY package*.json ./
 RUN npm install --production
 COPY --from=build /usr/src/app/build ./build
 COPY bin ./bin
-COPY public ./public
 COPY views ./views
 ENV NODE_ENV=production
 ENV APP_ENV=production
