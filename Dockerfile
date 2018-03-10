@@ -8,6 +8,7 @@ WORKDIR /usr/src/app
 # run TypeScript compiler
 FROM base AS build
 COPY . .
+RUN npm install
 RUN npx tsc
 
 #
