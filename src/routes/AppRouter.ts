@@ -27,7 +27,7 @@ class AppRouter {
     const minutes = Math.floor((uptime % (60 * 60)) / 60);
     const seconds = Math.floor(uptime % 60);
 
-    return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+    return `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
   }
 }
 
