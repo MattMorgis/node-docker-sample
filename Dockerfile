@@ -1,6 +1,6 @@
 #
 # ---- Base Node ----
-FROM node:9 as base
+FROM node:10 as base
 WORKDIR /usr/src/app
 
 #
