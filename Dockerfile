@@ -12,10 +12,17 @@ RUN npm install
 RUN npx tsc
 
 #
+# ---- Deps ----
+# install productions deps
+FROM base as deps
+COPY . .
+RUN npm install --production
+
+#
 # ---- Release ----
 FROM base AS release
 COPY package*.json ./
-RUN npm install --production
+COPY --from=deps /usr/src/app/node_modules ./node_modules
 COPY --from=build /usr/src/app/build ./build
 COPY bin ./bin
 COPY views ./views
