@@ -26,8 +26,6 @@ COPY --from=deps /usr/src/app/node_modules ./node_modules
 COPY --from=build /usr/src/app/build ./build
 COPY bin ./bin
 COPY views ./views
-ENV NODE_ENV=production
-ENV APP_ENV=production
 EXPOSE 3000
 CMD node bin/www
 
