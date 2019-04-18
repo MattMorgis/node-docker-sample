@@ -22,7 +22,7 @@ class Server {
   }
 
   private isProd(): boolean {
-    return this.express.get('env') === 'production';
+    return process.env.NODE_ENV === 'production';
   }
 
   private middleware(): void {
